@@ -28,19 +28,3 @@ def producer():
 
 if __name__ == '__main__':
     producer()
-"""
-random_values = [1, 2, 3, 4, 5, 6, 7]
-while True:
-    random_value = choice(random_values)
-    data = {
-        "test_data": {
-            "random_value": random_value
-        },
-        "timestamp": str(datetime.now()),
-        "value_status": "High" if random_value > 5 else "Low"
-    }
-    print(data)
-    producer.send(topic, data)
-    producer.flush()
-    time.sleep(1)
-"""
